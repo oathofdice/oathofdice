@@ -1,0 +1,23 @@
+# Exclude all files by default.
+*
+
+# Include the .gitignore file itself, and top-level yaml files.
+!/LICENSE
+!/.gitignore
+!/.metadata
+!/*.yaml
+
+# Allow any markdown or Dart files.
+!*.dart
+!*.md
+
+# Even in subdirectories.
+!*/
+
+# Allow any file in macos/.
+!/macos/**
+
+# Always exclude doc, .dart_tool, and build directories.
+/doc/
+/.dart_tool/
+/build/
